@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página con Bootstrap 5 y SASS</title>
+    <link rel="stylesheet" href="/styles/bootstrap.css" />
+    <link rel="stylesheet" href="/styles/custom.css" />
+
+</head>
+
+<body>
+    <div id="root">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                        <div class="container-fluid">
+                            <a class="navbar-brand" href="#"><img class="logoVimeoMobile" src="/Vimeo_logo.png" alt=""></a>
+                            <div>
+                                <button type="button" class="btn btn-light btn-login">Iniciar sesión</button>
+                            </div>
+                            <div>
+                                <button type="button" style="background: #DFE4EA;" class="btn btn-light btn-join ">Unirse</button>
+                            </div>
+                            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon iconNavbar"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Link</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Dropdown
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                                    </li>
+                                </ul>
+                                <form class="d-flex" role="search">
+                                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                    <button class="btn btn-outline-success" type="submit">Search</button>
+                                </form>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+
+        <main>
+            <div class="container">
+                <div class="row min-vh-75 align-items-center">
+                    <div class="col-12 text-center mb-5">
+                        <h1 class="hero-title">Haga más con sus videos</h1>
+                        <p class="hero-text mt-4">
+                            Conozca la plataforma de video completa que puede transformar su manera de hacer negocios.
+                        </p>
+                        <button class="btn btn-light btn-planesMobile mt-4 w-100 ">
+                             Ver los planes 
+                            <span class="flechaIcon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                            </svg></span>
+                        </button>
+
+
+                        <button class="btn btn-light btn-planesMobile2 mt-4 w-100 ">
+                             Ver los planes 
+                            <span class="flechaIcon2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                            </svg></span>
+                        </button>
+
+                        <div class="phone-container mt-4 ">
+        <div class="screen">
+            <video autoplay poster="https://i.vimeocdn.com/custom_asset/21a684b9352e090b70ace38910e58e70" data-src="https://player.vimeo.com/progressive_redirect/playback/938226648/rendition/1080p/file.mp4?loc=external&signature=b1d907631c774c4dba6d9b4530f6db8ea5be4d9e5225df477b2b16dba0e080fb" loop preload="metadata" id="video" width="100%" height="100%" controls style="border-radius: 15px;">
+                <source src="https://player.vimeo.com/progressive_redirect/playback/938226648/rendition/1080p/file.mp4?loc=external&signature=b1d907631c774c4dba6d9b4530f6db8ea5be4d9e5225df477b2b16dba0e080fb" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="timeline">
+            <div class="track">
+                <div class="progress"></div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button class="btn-round"><i class="bi bi-plus"></i></button>
+            <button class="btn-round play-btn">▶</button>
+            <button class="btn-round"><i class="bi bi-palette"></i></button>
+        </div>
+    </div>
+  <div class="position-relative d-flex flex-column gap-4 text-dark text-md-white py-md-5">
+    <h1 class="hero-zoom-content-title display-4">Su paquete completo de herramientas de video</h1>
+    <div class="hero-zoom-content-description lead">
+        Obtenga todo lo que necesita para editar, gestionar y publicar videos impactantes que generen resultados.
+    </div>
+    <div class="d-flex flex-column gap-2 flex-md-row hero-zoom-content-cta">
+          <button class="btn btn-light btn-planesMobile mt-4 w-100 ">
+                             Solicitar una demostracion
+                            <span class="flechaIcon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                            </svg></span>
+                        </button>
+    </div>
+</div>
+
+<div class="container-fluid py-4">
+    <div class="container bg-light">
+        <div class="row py-4">
+            <div class="col-12 text-center">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-8">
+                        <h2 class="text-center text-break">
+                            La plataforma de confianza de 287 millones de creadores, empresarios y negocios
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="container bg-container-background white header-block pt-component pb-component">
+        <div class="container-inner mx-auto w-100">
+            <div class="row justify-content-center text-center text-generic-card-content">
+                <div class="col-12 col-md-10">
+                    <span class="text-eyebrow text-generic-card-sub-content-light">
+                        Las mejores experiencias de video en Internet, en un mismo lugar
+                    </span>
+                    <div class="d-flex flex-column gap-4">
+                        <h1 class="text-display-mobile-4.5 display-4 break-auto animate-title">
+                            Su plataforma de video impulsada por IA
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<ul class="row g-4 list-unstyled">
+    <li class="col-12 col-lg-6">
+        <div class="d-flex flex-column flex-lg-row w-100 h-100 bg-light rounded-3 overflow-hidden">
+            <a href="https://vimeo.com/es/features/online-video-hosting" class="d-flex justify-content-end w-100 h-auto flex-md-1">
+                <div class="position-relative rounded-3 w-100 h-auto aspect-ratio-1">
+                    <img class="img-fluid w-100 h-100 object-fit-cover" src="https://i.vimeocdn.com/custom_asset/396c8ea0b0abec01f561e170698bdb8a?q=80" alt="Vimeo">
+                </div>
+            </a>
+            <div class="py-4 px-4 d-flex flex-column flex-1 justify-center gap-3">
+                <h2 >
+                    <a class="text-decoration-none font-weight-bold text-body font-weight-bold text-body" href="https://vimeo.com/es/features/online-video-hosting">Alojamiento y reproductor</a>
+                </h2>
+                <p class="text-body font-weight-bold">
+                    Aloje sus videos con nuestro reproductor HD sin anuncios. Dondequiera que los inserte o comparta, su diseño de reproductor personalizado y su marca los acompañarán.
+                </p>
+                <div class="mt-3 d-flex flex-column flex-md-row">
+                    <a class="btn btn-outline-primary" style="width: 60px;  background-color: #17d5ff;" href="https://vimeo.com/es/features/online-video-hosting">
+                        <span class="d-flex align-items-center">
+                            <span class="me-2"></span>
+                            <svg width="20px" height="20px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" class="shrink-0">
+                                <g>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.085 10.8333L9.42356 14.5731C9.04929 14.9553 9.04929 15.5667 9.42356 15.949C9.8092 16.3429 10.4433 16.3429 10.8289 15.949L15.965 10.703C16.345 10.3148 16.345 9.68553 15.965 9.29737L10.8289 4.05105C10.4433 3.65715 9.80921 3.65713 9.42356 4.05101C9.04928 4.43328 9.04926 5.04462 9.42352 5.42691L13.0847 9.16666L4.58333 9.16666C4.1231 9.16666 3.75 9.53976 3.75 10C3.75 10.4602 4.1231 10.8333 4.58333 10.8333L13.085 10.8333Z"></path>
+                                </g>
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li class="col-12 col-lg-6">
+        <div class="d-flex flex-column flex-lg-row w-100 h-100 bg-light rounded-3 overflow-hidden">
+            <a href="https://vimeo.com/es/features/video-editor" class="d-flex justify-content-end w-100 h-auto flex-md-1">
+                <div class="position-relative rounded-3 w-100 h-auto aspect-ratio-1">
+                    <img class="img-fluid w-100 h-100 object-fit-cover" src="https://i.vimeocdn.com/custom_asset/52495987046bfa12a188488ee2d4b6c9?w=654&q=80" alt="Vimeo">
+                </div>
+            </a>
+            <div class="py-4 px-4 d-flex flex-column flex-1 justify-center gap-3">
+                <h2 >
+                    <a class="text-decoration-none font-weight-bold text-body font-weight-bold text-body" href="https://vimeo.com/es/features/video-editor">Creación y edición</a>
+                </h2>
+                <p class="text-body font-weight-bold">
+Cree y edite sus videos con nuestras sencillas herramientas. Agregue efectos, texto y más para que sus videos se destaquen.                </p>
+                <div class="mt-3 d-flex flex-column flex-md-row">
+                    <a class="btn btn-outline-primary" style="width: 60px;  background-color: #17d5ff;" href="https://vimeo.com/es/features/online-video-hosting">
+                        <span class="d-flex align-items-center">
+                            <span class="me-2"></span>
+                            <svg width="20px" height="20px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" class="shrink-0">
+                                <g>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.085 10.8333L9.42356 14.5731C9.04929 14.9553 9.04929 15.5667 9.42356 15.949C9.8092 16.3429 10.4433 16.3429 10.8289 15.949L15.965 10.703C16.345 10.3148 16.345 9.68553 15.965 9.29737L10.8289 4.05105C10.4433 3.65715 9.80921 3.65713 9.42356 4.05101C9.04928 4.43328 9.04926 5.04462 9.42352 5.42691L13.0847 9.16666L4.58333 9.16666C4.1231 9.16666 3.75 9.53976 3.75 10C3.75 10.4602 4.1231 10.8333 4.58333 10.8333L13.085 10.8333Z"></path>
+                                </g>
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </li>
+   <li class="col-12 col-lg-6">
+        <div class="d-flex flex-column flex-lg-row w-100 h-100 bg-light rounded-3 overflow-hidden">
+            <a href="https://vimeo.com/es/features/livestreaming" class="d-flex justify-content-end w-100 h-auto flex-md-1">
+                <div class="position-relative rounded-3 w-100 h-auto aspect-ratio-1">
+                    <img class="img-fluid w-100 h-100 object-fit-cover" src="https://i.vimeocdn.com/custom_asset/5304f0eac24cd36046c8c4951ac9becf?w=654&q=80" alt="Vimeo">
+                </div>
+            </a>
+            <div class="py-4 px-4 d-flex flex-column flex-1 justify-center gap-3">
+                <h2 >
+                    <a class="text-decoration-none font-weight-bold text-body font-weight-bold text-body" href="https://vimeo.com/es/features/video-editor">Transmisiones en vivo y eventos</a>
+                </h2>
+                <p class="text-body font-weight-bold">
+Transmita sus eventos en vivo o alójelos on-demand. Nuestras herramientas le permiten compartir fácilmente su contenido con el resto del mundo.                <div class="mt-3 d-flex flex-column flex-md-row">
+                    <a class="btn btn-outline-primary" style="width: 60px;  background-color: #17d5ff;" href="https://vimeo.com/es/features/livestreaming">
+                        <span class="d-flex align-items-center">
+                            <span class="me-2"></span>
+                            <svg width="20px" height="20px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" class="shrink-0">
+                                <g>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.085 10.8333L9.42356 14.5731C9.04929 14.9553 9.04929 15.5667 9.42356 15.949C9.8092 16.3429 10.4433 16.3429 10.8289 15.949L15.965 10.703C16.345 10.3148 16.345 9.68553 15.965 9.29737L10.8289 4.05105C10.4433 3.65715 9.80921 3.65713 9.42356 4.05101C9.04928 4.43328 9.04926 5.04462 9.42352 5.42691L13.0847 9.16666L4.58333 9.16666C4.1231 9.16666 3.75 9.53976 3.75 10C3.75 10.4602 4.1231 10.8333 4.58333 10.8333L13.085 10.8333Z"></path>
+                                </g>
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li class="col-12 col-lg-6">
+        <div class="d-flex flex-column flex-lg-row w-100 h-100 bg-light rounded-3 overflow-hidden">
+            <a href="https://vimeo.com/es/ott" class="d-flex justify-content-end w-100 h-auto flex-md-1">
+                <div class="position-relative rounded-3 w-100 h-auto aspect-ratio-1">
+                    <img class="img-fluid w-100 h-100 object-fit-cover" src="https://i.vimeocdn.com/custom_asset/bec136064b1c6d8d5267d2d2b996ceda?w=654&q=80" alt="Vimeo">
+                </div>
+            </a>
+            <div class="py-4 px-4 d-flex flex-column flex-1 justify-center gap-3">
+                <h2 >
+                    <a class="text-decoration-none font-weight-bold text-body font-weight-bold text-body" href="https://vimeo.com/es/ott">Monetización</a>
+                </h2>
+                <p class="text-body font-weight-bold">
+Gane dinero con sus videos con nuestras herramientas de monetización. Agregue anuncios, suscripciones y más a sus videos.              <div class="mt-3 d-flex flex-column flex-md-row">
+                    <a class="btn btn-outline-primary" style="width: 60px;  background-color: #17d5ff;" href="https://vimeo.com/es/ott">
+                        <span class="d-flex align-items-center">
+                            <span class="me-2"></span>
+                            <svg width="20px" height="20px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" class="shrink-0">
+                                <g>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.085 10.8333L9.42356 14.5731C9.04929 14.9553 9.04929 15.5667 9.42356 15.949C9.8092 16.3429 10.4433 16.3429 10.8289 15.949L15.965 10.703C16.345 10.3148 16.345 9.68553 15.965 9.29737L10.8289 4.05105C10.4433 3.65715 9.80921 3.65713 9.42356 4.05101C9.04928 4.43328 9.04926 5.04462 9.42352 5.42691L13.0847 9.16666L4.58333 9.16666C4.1231 9.16666 3.75 9.53976 3.75 10C3.75 10.4602 4.1231 10.8333 4.58333 10.8333L13.085 10.8333Z"></path>
+                                </g>
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </li>
+</ul>
+
+
+
+                      
+                       
+                      
+
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </main>
+
+    </div>
+    <script type="module" src="/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.js"></script>
+
+</body>
+
+</html>
