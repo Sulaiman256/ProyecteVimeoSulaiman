@@ -139,11 +139,23 @@
             align-items: center;
             cursor: pointer;
         }
+            .rounded-video {
+      border-radius: 1rem;
+      overflow: hidden;
+    }
+    .video-container {
+      position: relative;
+      padding-top: 56.25%; 
+    }
+    .video-container video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
 
-        .icon-container {
-    width: auto;
-    margin-right: 0.5rem; /* Para reducir el espacio entre la flecha y el texto */
-}
+
 
   
 }
