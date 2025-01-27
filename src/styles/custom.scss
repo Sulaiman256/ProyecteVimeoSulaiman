@@ -157,8 +157,146 @@
      .max-h-150 {
     max-height: 150px;
   }
-
-
-
   
+
+
+
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #fafcfd;
+}
+
+h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #fafcfd;
+
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.footer-links a {
+    color: #fafcfd;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #007bff;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-outline-primary {
+    color: #007bff;
+    border-color: #007bff;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icon {
+    color: #6c757d;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #007bff;
+}
+
+.language-selector {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.form-select {
+    width: auto;
+}
+
+.legal-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.legal-links a {
+    color: #6c757d;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.legal-links a:hover {
+    color: #007bff;
+}
+
+    .footer {
+        padding: 2rem 0;
+    }
+
+    h2, h3 {
+        font-size: 1.25rem;
+    }
+
+    .legal-links {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .footer-parrafo{
+      color: #fafcfd;
+    }
+    .footer-links1 a{
+       position: relative;
+    padding-right: 1rem;
+    margin-right: 0.5rem;
+    }
+    .footer-links1 a:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 1rem;
+    width: 1px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.iconFlechaFooterAzul{
+  margin-left: 200px;
+}
+.colourArrowFooter {
+  fill: white !important; 
+}
+
+.arrowfirst{
+  background-color: #00aacf;
+  margin-left: 150px;
+}
+.arrowsecond{
+  background-color: #fafcfd;
+  margin-left: 160px;
+}
+.arrowthird{
+  background-color: #00aacf;
+  margin-left: 70px;
+}
+
+
+
+
+
 }
