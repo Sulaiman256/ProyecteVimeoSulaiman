@@ -313,17 +313,6 @@
         opacity: 0;
         transform: translateX(10px);
     }
-    .dropdownContent {
-        display: none;
-        position: absolute;
-        background: white;
-        padding: 15px;
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    }
-    .nav-item:hover+.dropdownContent,
-    .dropdownContent:hover {
-        display: block;
-    }
     .svg-container {
         transform: rotate(90deg);
         transition: transform 0.3s ease-in-out;
@@ -350,6 +339,7 @@
         transform: rotate(270deg);
         transition: transform 0.3s ease-in-out;
     }
+    .nav-item:hover nav {}
     .mega-menu {
         padding: 30px 0;
         background-color: #fff;
@@ -393,5 +383,17 @@
         height: 30px;
         /* Altura fija para el contenedor del ícono */
         margin-right: 10px;
+    }
+    nav {
+        background: #fafcfd;
+        /* Color sólido por defecto */
+        transition: background 0.3s ease-in-out, backdrop-filter 0.3s ease-in-out;
+    }
+    .nav-item:hover~nav,
+    nav:hover {
+        background: #f5f8f9;
+        /* Hace el fondo translúcido */
+        backdrop-filter: blur( 10px);
+        /* Opcional, desenfoque para efecto más elegante */
     }
 }
